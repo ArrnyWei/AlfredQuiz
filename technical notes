@@ -1,0 +1,9 @@
+1. Pull FetchGallery to ViewModel
+2. Add CollectionView to ViewContoller
+3. Creat PhotoUICollectionView as custom CollectionView and PhotoCollectionViewCell as custom colleciton View Cell
+4. fulfill change animation like apple photo, choose UICollectionViewDiffableDataSource to set the dataSource of collectionView
+5. Use NSDiffableDataSourceSnapshot to add Data to Date source
+6. use UICollectionViewCompositionalLayout to layout the image.
+7. binding data and event with combine
+8. Use NSCache to avoid image download sync issue in reuse cell
+9. Switch layout by set contentlayout with animation and make sure visibleCell will update too.

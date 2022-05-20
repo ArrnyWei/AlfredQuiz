@@ -2,8 +2,7 @@
 //  UITableView+Utils.swift
 //  MVVMSample
 //
-//  Created by EnochWu on 2019/08/23.
-//  Copyright © 2019 EnochWu. All rights reserved.
+//  Created by Shih Chi Wei on 2022/5/21.
 //
 
 import UIKit

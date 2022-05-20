@@ -2,8 +2,7 @@
 //  UIImageView+Utils.swift
 //  ecogenie
 //
-//  Created by s-5 on 2019/10/10.
-//  Copyright © 2019 nextDrive. All rights reserved.
+//  Created by Shih Chi Wei on 2022/5/21.
 //
 
 import Foundation

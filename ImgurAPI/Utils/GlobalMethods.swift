@@ -2,8 +2,7 @@
 //  GlobalMethods.swift
 //  NextDriveAppSDK_iOS
 //
-//  Created by Ming on 2019/08/08.
-//  Copyright © 2019 Ming. All rights reserved.
+//  Created by Shih Chi Wei on 2022/5/21.
 //
 
 import UIKit
