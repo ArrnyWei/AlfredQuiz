@@ -18,7 +18,11 @@ class PhotoCollectionViewCell: UICollectionViewCell {
 
     func update(galleryImage: GalleryImage, mode: ViewController.Mode) {
         titleLabel.text = galleryImage.galleryTitle
-        imageView.loadImageUsingCache(withUrl: galleryImage.link, contentMode: .scaleAspectFill)
+        imageView.loadImageUsingCache(withUrl: galleryImage.link, contentMode: .scaleAspectFill, dataHandler:  { url ,data, response in
+            if galleryImage.link == url {
+                response(data)
+            }
+        })
         contentView.clipsToBounds = true
         updateMode(mode: mode)
     }

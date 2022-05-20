@@ -16,7 +16,7 @@ extension UIImageView {
                              contentMode: UIView.ContentMode = .scaleAspectFit,
                              onFailure: ((Error) -> Void)? = nil,
                              needActivityIndicator: Bool = true,
-                             dataHandler: ((Data, @escaping (Data?) -> Void) -> Void)? = nil) {
+                             dataHandler: ((String, Data, @escaping (Data?) -> Void) -> Void)? = nil) {
         guard let url = URL(string: urlString) else { return }
 
         self.image = nil
@@ -61,7 +61,7 @@ extension UIImageView {
                 }
             }
             if let handler = dataHandler {
-                handler(data!) {
+                handler(urlString ,data!) {
                     guard let processedData = $0 else { return }
                     render(with: processedData)
                 }
