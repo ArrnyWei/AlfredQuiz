@@ -104,7 +104,6 @@ class PhotoUICollectionView: UICollectionView {
             let layout = UICollectionViewCompositionalLayout(section: section)
             return layout
         }
-
     }
 }
 
@@ -121,5 +120,9 @@ extension PhotoUICollectionView: UICollectionViewDelegate {
                 scrollToButtomSubject.send()
             }
         }
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
     }
 }
